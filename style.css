@@ -79,6 +79,7 @@ body {
 .production {
     display: flex;
     justify-content: center;
+    margin: 0px 0px 90px 0px;
 }
 
 .production__block {
@@ -139,6 +140,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .reproduction__h2 {
@@ -155,14 +157,21 @@ body {
 
 .reproduction__filter {
     display: flex;
+    gap: 32px;
+
 
 }
 
 .reproduction input {
     z-index: 2;
+    display: none;
 }
 
 .reproduction__castom-radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     cursor: pointer;
     padding: 10px 20px;
 
@@ -178,26 +187,13 @@ body {
     font-size: 20px;
     line-height: 23px;
 
-    color: #F4F6F5;
+    color: #2C2D35;
 }
 
-.reproduction__castom-radio::before {
-    content: '';
-    cursor: pointer;
-    padding: 10px 20px;
 
-    width: 126px;
-    height: 43px;
-
-    background-color: #11db43;
-    border-radius: 20px;
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-
+.reproduction input:checked + .reproduction__castom-radio {
+    display: flex;
+    background-color: #598D66;
     color: #F4F6F5;
 }
 
@@ -251,6 +247,14 @@ body {
         align-items: center;
         padding: 20px 60px;
         gap: 6px;
+    }
+
+    .reproduction__h2 {
+        font-size: 30px;
+    }
+
+    .reproduction__castom-radio {
+        font-size: 20px;
     }
 }
 
@@ -330,6 +334,10 @@ body {
 
 @media (max-width: 533px) {
     
+    .production {
+        margin: 0px 0px 50px 0px;
+    }
+
     .logo {
         background-color: #fff;
         padding: 15px 100vw 15px 100vw;
@@ -370,6 +378,10 @@ body {
     }
 
     .production__button {
+    }
+
+    .reproduction__filter {
+        overflow-x: scroll;
     }
     
 }
