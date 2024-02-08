@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./media/favicon.svg" type="image/x-icon">
     <title>Ink.House</title>
 </head>
 <body>
@@ -24,9 +25,9 @@
                                 </svg>
                             </a>
                         </li>
-                        <li><a href="#">Репродукции</a></li>
-                        <li><a href="#">Новинки</a></li>
-                        <li><a href="#">О нас</a></li>
+                        <li><a href="#reproduction">Репродукции</a></li>
+                        <li><a href="#new-collection">Новинки</a></li>
+                        <li><a href="#team">О нас</a></li>
                         <li>
                             <a  class="menu__bucket" href="#">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,354 +66,82 @@
                     <button class="production__button">Продукция</button>
                 </div>
             </section>
-            <section class="reproduction">
-                <div class="reproduction__header">
-                    <h2 class="reproduction__h2">Репродукции</h2>
-                    <div class="reproduction__filter">
-                        <label>
-                            <input id='radio-1' name="radio" type="radio" checked>
-                            <div class="reproduction__castom-radio">
-                                Франция
-                            </div> 
-                        </label>
-                        <label>
-                            <input id='radio-2' name="radio" type="radio">
-                            <div class="reproduction__castom-radio">
-                                Германия
-                            </div> 
-                        </label>
-                        <label>
-                            <input id='radio-3' name="radio" type="radio">
-                            <div class="reproduction__castom-radio">
-                                Англия
-                            </div> 
-                        </label>
-                    </div>
-                </div>
-                <div class="reproduction__grid">
-                    <div class="reproduction__grid-1">
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
-                        </div>
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
-                        </div>
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
-                        </div>
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
-                        </div>
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
-                        </div>
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
+            <section class="reproduction" id="reproduction">
+                <div class="reproduction__container">
+                    <div class="reproduction__header">
+                        <h2 class="reproduction__h2">Репродукции</h2>
+                        <div class="reproduction__filter">
+                            <label>
+                                <input id='radio-1' name="radio" type="radio" checked>
+                                <div class="reproduction__castom-radio">
+                                    Франция
+                                </div> 
+                            </label>
+                            <label>
+                                <input id='radio-2' name="radio" type="radio">
+                                <div class="reproduction__castom-radio">
+                                    Германия
+                                </div> 
+                            </label>
+                            <label>
+                                <input id='radio-3' name="radio" type="radio">
+                                <div class="reproduction__castom-radio">
+                                    Англия
+                                </div> 
+                            </label>
                         </div>
                     </div>
-                    <div class="reproduction__grid-1">
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
-                        </div>
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
-                        </div>
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
-                        </div>
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
-                        </div>
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
-                        </div>
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
-                        </div>
-                    </div>
-                    <div class="reproduction__grid-1">
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
-                        </div>
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
-                        </div>
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
-                        </div>
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
-                        </div>
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
-                        </div>
-                        <div class="cart">
-                            <img class="cart__img" src="./media/amur.png" alt="art">
-                            <p class="cart__autor">
-                                Марсель Руссо
-                            </p>
-                            <dl>
-                                <dt>Охота Амура</dt>
-                                <dd>Холст, масло (50х80)</dd>
-                            </dl>
-                            <p class="cart__price">
-                                14 500 руб
-                            </p>
-                            <button class="cart__button">
-                                В корзину
-                            </button>
+                    <div class="reproduction__grid">
+                        <div class="reproduction__grid-1">
+                            <div class="cart">
+                                <img class="cart__img" src="./media/amur.png" alt="art">
+                                <p class="cart__autor">
+                                    Марсель Руссо
+                                </p>
+                                <dl>
+                                    <dt>Охота Амура</dt>
+                                    <dd>Холст, масло (50х80)</dd>
+                                </dl>
+                                <p class="cart__price">
+                                    14 500 руб
+                                </p>
+                                <button class="cart__button">
+                                    В корзину
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="new-collection">
-                <div class="new-collection__block">
-                    <div class="new-collection__header">
-                        <img class="new-collection__logo" 
-                             src="./media/logo-2.svg" 
-                             alt="alt-logo">
-                        <h2 class="new-collection__title">
-                            Новая коллекция французских авторов
-                        </h2>
+            <section class="new-collection" id="new-collection">
+                <div class="new-collection__container">
+                    <div class="new-collection__block">
+                        <div class="new-collection__header">
+                            <img class="new-collection__logo" 
+                                 src="./media/logo-2.svg" 
+                                 alt="alt-logo">
+                            <h2 class="new-collection__title">
+                                Новая коллекция французских авторов
+                            </h2>
+                        </div>
+                        <p>
+                            Сложно сказать, почему акционеры 
+                            крупнейших компаний призывают нас 
+                            к новым свершениям, которые, в свою 
+                            очередь, должны быть заблокированы в 
+                            рамках своих собственных рациональных ограничений. 
+                        </p>
+                        <p>
+                            Принимая во внимание показатели успешности, 
+                            граница обучения кадров предопределяет высокую 
+                            востребованность 
+                            направлений прогрессивного развития.
+                        </p>
+                        <button class="new-collection__button">Ознакомится</button>
                     </div>
-                    <p>
-                        Сложно сказать, почему акционеры 
-                        крупнейших компаний призывают нас 
-                        к новым свершениям, которые, в свою 
-                        очередь, должны быть заблокированы в 
-                        рамках своих собственных рациональных ограничений. 
-                    </p>
-                    <p>
-                        Принимая во внимание показатели успешности, 
-                        граница обучения кадров предопределяет высокую 
-                        востребованность 
-                        направлений прогрессивного развития.
-                    </p>
-                    <button class="new-collection__button">Ознакомится</button>
                 </div>
             </section>
-            <section class="team">
+            <section class="team" id="team">
                 <img class="team__creative-photo" src="./media/createve-photo.png" alt="createve photo">
                 <div class="team__block">
                     <h2 class="team__title">Наша команда</h2>
