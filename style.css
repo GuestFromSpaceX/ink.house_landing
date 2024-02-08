@@ -130,6 +130,7 @@ body {
 }
 
 .production__button {
+    cursor: pointer;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
@@ -137,12 +138,15 @@ body {
     line-height: 23px;
     color: #598D66;
 
-    width: 227px;
+    max-width: 227px;
+    width: 100%;
     height: 65px;
 
     border: 1px solid #598D66;
     background-color: #fff;
     transition: 0.5s;
+
+    padding: 21px 60px;
 }
 
 .production__button:hover {
@@ -302,6 +306,8 @@ body {
 }
 
 .cart__button {
+    cursor: pointer;
+
     /* Auto layout */
     display: flex;
     flex-direction: row;
@@ -339,9 +345,10 @@ body {
 
 .new-collection {
     background-repeat: no-repeat;
-
     background-image: url(./media/new-collection-background.png);
-
+    background-position: center;
+    margin-top: 70px;
+    
 }
 
 .new-collection__container {    
@@ -387,6 +394,11 @@ body {
 }
 
 .new-collection__button {
+    cursor: pointer;
+    max-width: 257px;
+    width: 100%;
+    height: 65px;
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -405,13 +417,21 @@ body {
     color: #2C2D35;
 
     border-width: 0px;
+    transition: 0.5s;
 }
+
+.new-collection__button:hover{
+    transition: 0.5s;
+    background-color: rgb(250, 235, 151);
+    border: 1px solid rgb(163, 131, 20);
+}
+
 
 .team {
     display: flex;
     max-width: 1140px;
     width: 100%;
-    margin: 0 auto;
+    margin: 70px auto 0px auto;
     justify-content: space-between;
     padding: 0 15px;
 }
@@ -451,9 +471,26 @@ body {
     color: #2C2D35;
 }
 
+.team__icons {
+    display: flex;
+    gap: 30px;
+}
+
+.team__icon img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
 .footer {
     background-color: #D4E8D9;
     margin: 70px 0px 0px 0px;
+}
+
+
+.footer a {
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .footer__container {
@@ -469,7 +506,8 @@ body {
 
 }
 
-.footer__logo-block {
+.footer__logo-block dt a {
+    color: #2C2D35
 }
 
 .footer__logo {
@@ -730,7 +768,7 @@ body {
     }
 
     .new-collection__block {
-        padding: 70px 0px 70px 40px;
+        padding: 0px 0px 0px 0px;
         max-width: 680px;
     }
 
